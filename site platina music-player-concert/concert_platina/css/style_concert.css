@@ -1,0 +1,159 @@
+/* стили гугл */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Staatliches&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+ }
+ .bg-video-wrap {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	background: url(../mp4/diana_2.mp4) no-repeat center center/cover;
+ }
+ video {
+	min-width: 100%;
+	min-height: 100vh;
+	z-index: 1;
+ }
+ .overlay {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: linear-gradient(45deg, rgba(0,0,0,.1) 70%, rgba(0,0,0,.7) 50%);
+	background-size: 2px 2px;
+	z-index: 1;
+ }
+
+ h1 a{
+	text-decoration: none;
+	font-family: 'Indie Flower', cursive;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	bottom: 80%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 3;
+	max-width: 400px;
+	width: 100%;
+	height: 50px;
+	font-size: 50px;
+ }
+ /* начало левый бар с ссылками */
+
+/* начало кнопки - музыка */
+
+.music_platina{
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+	margin-bottom: 80px;
+	margin-left: 40px;
+}
+
+.music_platina a{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+
+
+/* конец кнопки - музыка */
+
+.socail_content{
+	max-width: 30px;
+}
+
+.left_bar_social{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	max-height: 0px;
+
+	position: absolute;
+	z-index: 3;
+}
+
+.left_bar_social img{
+	max-width: 30px;
+	max-height: 30px;
+	margin-bottom: 80px;
+	margin-left: 40px;
+
+}
+
+/* начало концерты */
+
+.concert_artist a{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	line-height: 1.2;
+
+	padding-left: 40px;
+}
+/* конец концерты  */
+
+/* конец - левый бар с ссылками */
+
+/* старт - концертный блок */
+.concert_block {
+	font-family: 'Montserrat', sans-serif;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	top: 50%;
+	left: 70%;
+	width: 100%;
+	padding: 0px 20px;
+	color: white;
+	overflow-y: auto;
+	z-index: 3;
+	font-size: 20px;
+}
+.concerts_block_table {
+	width: 100%;
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin: auto;
+	position: relative;
+	padding: 20px 0px;
+}
+.cb_date {
+	width: 15%;
+}
+.cb_city {
+	width: 30%;
+	letter-spacing: 0.07em;
+}
+.cb_place {
+	width: 40%;
+	letter-spacing: 0.07em;
+}
+
+/* конец - концертный блок */
+

@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css_music/style_music.css">
+	<title>Music</title>
+</head>
+<body>
+	<div class="wrapper">
+
+		<div class="left_bar_social">
+			<div class="music_platina">
+				<a href="#">МУЗЫКА</a>
+			</div>
+		<div class="socail_content">
+			<a href="https://vk.com/platinarnbklub" target="_blank"><img src="img/social/vk.png" alt="vk"></a>
+			<a href="https://www.instagram.com/platina300/?hl=ru" target="_blank"><img src="img/social/insta.png" alt="insta"></a>
+			<a href="https://www.youtube.com/c/%D0%9F%D0%BB%D0%B0%D1%82%D0%B8%D0%BD%D0%B0300" target="_blank"><img src="img/social/youtube.png" alt="youtube"></a>
+			<a href="https://t.me/sosamuzik300" target="_blank"><img src="img/social/telegram.png" alt="telegram"></a>
+			<a href="https://music.apple.com/ru/artist/%D0%BF%D0%BB%D0%B0%D1%82%D0%B8%D0%BD%D0%B0/1309211809" target="_blank"><img src="img/social/apple_music.png" alt="apple music"></a>
+		</div>
+
+			<div class="concert_artist">
+				<a target="_blank" href="../concert_platina/concert_platina.html">КОНЦЕРТЫ</a>
+			</div>
+		</div>
+
+		<!-- скрины треков -->
+		<div class="cards">
+			<div class="tracks_list" id="track-play-gruppy">
+				 <img id=image src="img/track_list/gruppy.jpg" alt="">
+				 <div class="name_container">
+					  <div class="track"></div>
+							<div class="artist"></div> 
+				 </div>
+				 <div class="progress_bar">
+					  <input class="song" type="range" min='0 'max="100" >
+				 </div>
+				 <div class="time_bar">
+					  <div id=currentTime class="music-progress__time-item music-current-time start_track"></div>
+					  <div id=duration class="music-progress__time-item music-duration-time end_track"></div>
+				 </div>
+				 <div class="panel_players">
+					  <div class="left_button" onclick='selecting_track(-1)'>
+							<img src="img/button/left.png" alt="">
+					  </div>
+					  <div class="play_button">
+							<img id=playPause class='pause_active' src="img/button/play.png" alt="" onclick='play_pause(this)' />
+					  </div>
+					  <div class="right_button" onclick='selecting_track(1)'>
+							<img id="change-bg"  src="img/button/right.png" alt="">
+					  </div>
+				 </div>
+				 <div class="volume_regulator">
+					  <div class="left_volume" onclick='audio.muted = true'>
+							<img src="img/button/volume-mute.png" alt="">
+					  </div>
+					  <div class="panel_volume">
+							<input id=volume type="range" min='0 'max="100" onpointerdown='audio.volume = this.value / 100' onpointermove='audio.volume = this.value / 100'>
+					  </div>
+					  <div class="right_volume" onclick='audio.muted = false'>
+							<img src="img/button/volume-up.png" alt="">
+					  </div>
+				 </div>
+			</div>
+	  </div>
+	</div>
+
+
+
+	<script defer src="js_music/app_music.js"></script>
+</body>
+</html>
